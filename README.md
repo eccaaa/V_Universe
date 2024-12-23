@@ -63,7 +63,7 @@ Local Storage: Menyimpan data form agar tetap ada meskipun halaman dimuat ulang.
 
 
 
-# Langkah Langkah Hosting engan Infinityfree
+# Langkah Langkah Hosting Dengan Infinityfree
 1. Persiapkan File dan Folder
 Saya memastikan semua file website saya sudah lengkap, termasuk config.php, edit.php, onboarding.html, index.php, message.php, process.php, serta folder image dan style. 
 
@@ -90,3 +90,23 @@ Saya menyesuaikan pengaturan koneksi database dengan informasi dari InfinityFree
 
 website saya telah di hosting, dengan link http://v-universe.infinityfreeapp.com/onboarding.html
 Tetapi karena website hosting ini gratis, maka link nya akan dapat di akses setelah 72 jam deploy
+
+# Layanan Penyedia Hosting Web yang Cocok : Hostinger 
+
+Hostinger adalah pilihan ideal untuk hosting karena menawarkan performa tinggi dengan harga terjangkau. Dengan pusat data yang tersebar di berbagai lokasi, termasuk Asia, website Anda dapat diakses dengan cepat, terutama oleh audiens di wilayah tersebut. Panel kontrol hPanel yang intuitif memudahkan pengelolaan hosting, bahkan untuk pemula. Selain itu, Hostinger menyediakan fitur keamanan lengkap, seperti SSL gratis, proteksi DDoS, dan backup otomatis, untuk menjaga data pengguna tetap aman.
+
+Layanan Hostinger juga didukung teknologi modern seperti PHP 8.0, MySQL, dan LiteSpeed Cache untuk memastikan performa optimal. Dengan dukungan pelanggan 24/7 yang responsif, Anda tidak perlu khawatir jika mengalami kendala teknis. Hostinger bahkan menawarkan garansi uang kembali 30 hari, sehingga Anda dapat mencoba layanannya tanpa risiko. Kombinasi fitur ini membuat Hostinger cocok untuk proyek Anda yang membutuhkan hosting andal dan efisien.
+
+# Memastikan keamanan data
+Website ini menggunakan teknik pengelolaan sesi yang aman dan perlindungan cookie untuk mencegah akses ilegal atau manipulasi data.
+
+# Konfigurasi  Server
+
+**Konfigurasi Dasar Server:**  
+File `config.php` mendefinisikan pengaturan inti untuk koneksi server database, seperti nama host, nama pengguna, kata sandi, dan nama database. File ini memastikan bahwa aplikasi PHP dapat terhubung dengan database yang dituju untuk menjalankan berbagai operasi seperti menyimpan atau mengambil data. Konfigurasi ini biasanya memanfaatkan PDO (PHP Data Objects) untuk membangun koneksi yang aman, efisien, dan mendukung fitur-fitur modern seperti pernyataan yang disiapkan (prepared statements). Selain itu, file ini sering digunakan untuk menyimpan variabel global, seperti parameter server, yang dapat diakses oleh file lain di seluruh aplikasi, memastikan konsistensi dan mempermudah pengelolaan pengaturan server.
+
+**Proses dan Interaksi Server:**  
+File `process.php` berfungsi sebagai penghubung antara logika aplikasi dan database server. File ini menangani operasi penting seperti pengolahan data yang dikirim melalui formulir menggunakan metode POST atau GET, validasi data pengguna, serta eksekusi kueri SQL untuk berbagai operasi database. `process.php` memanfaatkan konfigurasi yang diatur dalam `config.php` untuk memastikan koneksi database tetap aman dan stabil, dengan menggunakan prepared statements untuk mencegah ancaman seperti SQL Injection. Selain itu, file `index.php` bertindak sebagai antarmuka utama aplikasi, yang bertanggung jawab untuk memuat formulir atau data yang ditampilkan kepada pengguna.
+
+**Pengelolaan Pesan pada Server:**  
+Proses pengelolaan data pesan dilakukan melalui class `Message`, yang berfungsi sebagai abstraksi dari berbagai operasi database untuk pesan. Class ini mendukung operasi CRUD (Create, Read, Update, Delete) dan memastikan keamanan melalui pembersihan data serta prepared statements. Data yang dikirimkan oleh pengguna, seperti nama, email, pesan, dan detail lainnya, diolah di server, divalidasi, dan disimpan di tabel `messages` di database. Class ini juga menyediakan fitur tambahan seperti pengecekan keberadaan pesan dengan ID tertentu (`exists`) dan pembersihan data menggunakan metode `cleanData`, sehingga server dapat menangani interaksi data dengan lebih aman dan andal. Kombinasi ini menjamin efisiensi pengelolaan server serta pengalaman pengguna yang mulus.
