@@ -45,7 +45,7 @@ Tabel messages memiliki kolom seperti id, name, email, country, birthdate, messa
 3.2 Koneksi Database
 Konfigurasi parameter database untuk komunikasi dengan aplikasi.
 
-3.3Manipulasi Data
+3.3 Manipulasi Data
 Menyisipkan data dengan INSERT INTO.
 Mengubah data dengan UPDATE.
 Menghapus data dengan DELETE.
