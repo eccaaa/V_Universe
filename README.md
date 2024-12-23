@@ -5,7 +5,7 @@ Website ini adalah sebuah website fansite bagi penggemar Kim Taehyung, seorang p
 Penggemar dapat mengirimkan pesan yang akan ditujukan kepada Kim Taehyung, dan dapat mengelola pesan yang dikirimkan
 
 Dibuat oleh : Elsa Elisa Yohana  Sianturi
-NIM : 122140135
+NIM : 12214013
 Kelas : Pemrograman Web RA
 
 
@@ -26,6 +26,7 @@ Pada bagian ini, data dari formulir dikirim menggunakan metode POST atau GET, la
 Pada bagian ini, digunakan konsep pemrograman berorientasi objek (OOP) untuk membuat objek PHP dengan empat metode. Metode-metode ini dapat menangani berbagai tugas, seperti validasi data, penyimpanan, pengambilan, dan penghapusan data dalam aplikasi, sehingga membuat pengelolaan kode menjadi lebih terstruktur dan mudah dikelola.
 
 3. Database Management
+
 3.1 Pembuatan Tabel Database
 Pada bagian ini, dilakukan pembuatan database dengan perintah CREATE DATABASE, diikuti dengan pemilihan database yang baru dibuat menggunakan perintah USE. Selanjutnya, pembuatan tabel messages yang berisi beberapa kolom seperti id, name, email, country, birthdate, message, rating, browser, ip_address, dan created_at. Kolom-kolom ini memiliki tipe data yang sesuai dan beberapa di antaranya diberi atribut NOT NULL untuk memastikan data yang dimasukkan lengkap, serta kolom id sebagai primary key yang memiliki auto increment.
 
