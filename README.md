@@ -4,9 +4,10 @@ Selamat Datang di Website V Universe
 Website ini adalah sebuah website fansite bagi penggemar Kim Taehyung, seorang penyanyi dan juga dancer dari Korea Selatan
 Penggemar dapat mengirimkan pesan yang akan ditujukan kepada Kim Taehyung, dan dapat mengelola pesan yang dikirimkan
 
-Dibuat oleh : Elsa Elisa Yohana  Sianturi
-NIM : 12214013
-Kelas : Pemrograman Web RA
+Dibuat oleh 
+# Elsa Elisa Yohana  Sianturi
+# NIM : 12214013
+# Kelas : Pemrograman Web RA
 
 # Tentang Proyek
 Website ini dirancang untuk mengelola pesan dukungan kepada Kim Taehyung. Pengguna dapat:
